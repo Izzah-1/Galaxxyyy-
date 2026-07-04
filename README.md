@@ -1,30 +1,50 @@
 # 🌌 Galaxy Calculator
 
-A beautiful galaxy-themed calculator built using HTML, CSS, and JavaScript.
+A modern, galaxy-themed calculator built using **HTML, CSS, and JavaScript**. It features an animated galaxy background, glowing moon, shooting stars, glassmorphism design, and full keyboard support.
+
+---
+
+## 📸 Preview
+
+![Galaxy Calculator](preview.png)
+
+---
 
 ## ✨ Features
 
 - 🌌 Animated galaxy background
 - ⭐ Twinkling stars
-- 🌙 Glowing moon
 - ☁️ Moving nebula
+- 🌙 Glowing moon
+- ☄️ Shooting stars
 - 💜 Glassmorphism design
 - 🧮 Fully functional calculator
 - ⌨️ Keyboard support
 - 📱 Responsive layout
+- 🚫 Error handling
 
-## 🛠 Technologies Used
+---
+
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 
+---
+
 ## 🚀 Live Demo
 
-Click here to try it:
-
-https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
+👉 https://izzah-1.github.io/Galaxxyy/
 
 ---
 
-Made with ❤️ by Izzah
+## 👩‍💻 Author
+
+**Izzah**
+
+GitHub: https://github.com/Izzah-1
+
+---
+
+⭐ If you enjoyed this project, feel free to star the repository!
