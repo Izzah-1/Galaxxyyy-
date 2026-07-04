@@ -1,0 +1,83 @@
+/* ====================================
+   GALAXY CALCULATOR
+   Created by Izzah ✨
+==================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    background:linear-gradient(180deg,#050816 0%,#090b25 40%,#120028 100%);
+}
+
+/* ===========================
+        STARS
+=========================== */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image:
+        radial-gradient(2px 2px at 30px 40px,#fff,transparent),
+        radial-gradient(2px 2px at 180px 120px,#8fd3ff,transparent),
+        radial-gradient(2px 2px at 340px 220px,#ffffff,transparent),
+        radial-gradient(2px 2px at 520px 80px,#d7b8ff,transparent),
+        radial-gradient(2px 2px at 760px 300px,#ffffff,transparent);
+    background-size:800px 800px;
+    animation:moveStars 80s linear infinite;
+    opacity:.9;
+}
+
+@keyframes moveStars{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-800px);
+    }
+}
+
+/* ===========================
+        NEBULA
+=========================== */
+
+.nebula{
+
+    position:fixed;
+    inset:-20%;
+
+    background:
+    radial-gradient(circle,#6a11cb55 0%,transparent 40%),
+    radial-gradient(circle,#2575fc33 0%,transparent 35%),
+    radial-gradient(circle,#ff6ec433 0%,transparent 30%);
+
+    animation:nebulaMove 25s ease-in-out infinite alternate;
+
+    filter:blur(80px);
+
+}
+
+@keyframes nebulaMove{
+
+    from{
+        transform:translate(-5%,-3%) scale(1);
+    }
+
+    to{
+        transform:translate(5%,3%) scale(1.2);
+    }
+
+}
