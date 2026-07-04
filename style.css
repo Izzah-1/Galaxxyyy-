@@ -256,6 +256,82 @@ button:hover{
 
 }
 
+/* ===========================
+      SHOOTING STARS
+=========================== */
+
+.shooting-stars{
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shooting-stars span{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 12px white;
+    animation: shootingStar linear infinite;
+}
+
+.shooting-stars span::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:2px;
+    background:linear-gradient(to left,white,transparent);
+    transform:translateX(-180px);
+}
+
+.shooting-stars span:nth-child(1){
+    top:8%;
+    left:-10%;
+    animation-duration:7s;
+    animation-delay:0s;
+}
+
+.shooting-stars span:nth-child(2){
+    top:28%;
+    left:-20%;
+    animation-duration:9s;
+    animation-delay:2s;
+}
+
+.shooting-stars span:nth-child(3){
+    top:52%;
+    left:-15%;
+    animation-duration:8s;
+    animation-delay:5s;
+}
+
+.shooting-stars span:nth-child(4){
+    top:72%;
+    left:-25%;
+    animation-duration:10s;
+    animation-delay:1s;
+}
+
+@keyframes shootingStar{
+
+    0%{
+        transform:translate(0,0);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(1800px,900px);
+        opacity:0;
+    }
+
+}
+
 button:active{
 
     transform:scale(.95);
